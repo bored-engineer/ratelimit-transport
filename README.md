@@ -1,4 +1,4 @@
-# ratelimit-transport
+# ratelimit-transport [![Go Reference](https://pkg.go.dev/badge/github.com/bored-engineer/ratelimit-transport.svg)](https://pkg.go.dev/github.com/bored-engineer/ratelimit-transport)
 A Golang [http.RoundTripper](https://pkg.go.dev/net/http#RoundTripper) that limits the rate (QPS) of HTTP requests using [github.com/uber-go/ratelimit](https://github.com/uber-go/ratelimit), ex:
 
 ```go
