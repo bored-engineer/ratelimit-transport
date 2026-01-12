@@ -31,10 +31,10 @@ func (t *Transport) RoundTrip(req *http.Request) (*http.Response, error) {
 	return t.Base.RoundTrip(req)
 }
 
-// NewTransport creates a new Transport with the given base transport and rate.
+// New creates a new Transport with the given base transport and rate.
 // If no base transport is provided, http.DefaultTransport is used.
 // If the rate is zero or negative, the transport will not limit the rate.
-func NewTransport(base http.RoundTripper, rate int, opts ...Option) *Transport {
+func New(base http.RoundTripper, rate int, opts ...Option) *Transport {
 	if base == nil {
 		base = http.DefaultTransport
 	}
